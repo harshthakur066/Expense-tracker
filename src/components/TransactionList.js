@@ -9,6 +9,9 @@ export const TransactionList = () => {
   return (
     <div>
       <h3>History</h3>
+      {transactions.length === 0 ? (
+        <div> You have no transaction history </div>
+      ) : null}
       <ul className="list">
         {transactions.map((transaction) => (
           <Transaction key={transaction.id} transaction={transaction} />
