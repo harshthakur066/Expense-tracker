@@ -6,7 +6,13 @@ Frontend - React -> Hooks and Context API
 
 Backend - Node and MongoDB
 
-Frontend side:
+## Client side:
 
-1. `npm install`
-2. `npm start`
+1. `cd client`
+2. `npm install`
+3. `npm start`
+
+## Api:
+
+1. `cd api`
+2. `npm run server`
