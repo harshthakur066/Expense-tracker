@@ -45,9 +45,9 @@ exports.addTransaction = async (req, res, next) => {
 
 exports.deleteTransaction = async (req, res, next) => {
   try {
-    const transaction = await Tranaction.findById(req.param.id);
+    const transaction = await Tranaction.findById(req.params.id);
 
-    if (!transactions) {
+    if (!transaction) {
       return res.status(404).json({
         success: false,
         error: "No transaction found",
